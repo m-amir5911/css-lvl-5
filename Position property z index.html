@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property z-index</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            border: 2px groove darkslategray;
+            position: absolute;
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #first{
+            background-color: burlywood;
+            left: 40px;
+            top: 90px;
+            z-index: 2 ;
+        }
+        #second{
+            background-color: lightsalmon;
+            left: 90px;
+            top: 40px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position property z-index</h1>
+    <div id="first" class="box">z-index 1</div>
+    <div id="second" class="box">z-index 2</div>
+</body>
+</html>
